@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>你的中文名 · Chinese Name</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+      background: #faf8f4;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 24px;
+      border-bottom: 1px solid #e8e2d7;
+      background: #fff;
+    }
+    .brand {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .brand span { color: #b83a2a; }
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: #b83a2a;
+      color: #fff;
+    }
+    .hero {
+      text-align: center;
+      padding: 72px 24px 48px;
+    }
+    .hero h1 {
+      font-size: 40px;
+      line-height: 1.3;
+      margin-bottom: 16px;
+    }
+    .hero h1 strong { color: #b83a2a; }
+    .hero p {
+      font-size: 18px;
+      color: #5a5247;
+      max-width: 640px;
+      margin: 0 auto 32px;
+    }
+    .input-box {
+      max-width: 480px;
+      margin: 0 auto;
+      display: flex;
+      gap: 12px;
+    }
+    .input-box input {
+      flex: 1;
+      padding: 14px 18px;
+      font-size: 16px;
+      border: 2px solid #e8e2d7;
+      border-radius: 12px;
+      outline: none;
+      background: #fff;
+    }
+    .card {
+      max-width: 720px;
+      margin: 48px auto;
+      padding: 32px;
+      background: #fff;
+      border-radius: 20px;
+      border: 1px solid #e8e2d7;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+    .name-en {
+      font-size: 14px;
+      color: #8a7f72;
+    }
+    .name-cn {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .name-cn span { margin-right: 10px; }
+    .score {
+      font-size: 14px;
+      color: #b83a2a;
+      font-weight: 600;
+    }
+    .chars {
+      display: flex;
+      gap: 16px;
+      margin-top: 18px;
+      flex-wrap: wrap;
+    }
+    .char-item {
+      flex: 1;
+      min-width: 160px;
+      padding: 18px;
+      border-radius: 14px;
+      background: #faf8f4;
+      border: 1px solid #e8e2d7;
+    }
+    .char-item h3 {
+      font-size: 26px;
+      margin-bottom: 6px;
+      color: #b83a2a;
+    }
+    .char-item p {
+      font-size: 14px;
+      color: #5a5247;
+    }
+    .section {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+    .section h2 {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+    .section p {
+      color: #5a5247;
+      margin-bottom: 24px;
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 18px;
+    }
+    .step {
+      padding: 22px;
+      border-radius: 16px;
+      background: #fff;
+      border: 1px solid #e8e2d7;
+    }
+    .step .num {
+      font-size: 14px;
+      color: #b83a2a;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .step h3 { font-size: 18px; margin-bottom: 6px; }
+    .step p { font-size: 14px; color: #5a5247; margin: 0; }
+    .footer-cta {
+      text-align: center;
+      padding: 64px 24px;
+    }
+    .footer-cta .btn {
+      font-size: 18px;
+      padding: 16px 32px;
+    }
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: #8a7f72;
+      border-top: 1px solid #e8e2d7;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="brand">名 · <span>Chinese Identity</span></div>
+  <a href=" " class="btn btn-primary">创建你的中文名</a >
+</header>
+
+<section class="hero">
+  <h1>你的英文名，也可以有一个<br><strong>好听又自然的中文名</strong></h1>
+  <p>输入你的英文名，我们会根据发音、寓意和中文姓名习惯，为你生成一个像真名一样的中文名字。</p >
+  <div class="input-box">
+    <input type="text" placeholder="例如：Sarah" />
+    <button class="btn btn-primary">生成中文名</button>
+  </div>
+</section>
+
+<section class="card">
+  <div class="card-header">
+    <div>
+      <div class="name-en">Sarah · 萨拉</div>
+      <div class="name-cn"><span>苏</span><span>婉</span><span>宁</span></div>
+    </div>
+    <div class="score">自然度评分 96</div>
+  </div>
+  <p style="font-size:14px;color:#5a5247;">这个名字听起来像真实中文姓名，姓氏自然，发音贴近，寓意温柔安宁。</p >
+  <div class="chars">
+    <div class="char-item">
+      <h3>苏</h3>
+      <p>姓氏 · 常见中文姓氏，发音自然，适合作为中文姓。</p >
+    </div>
+    <div class="char-item">
+      <h3>婉</h3>
+      <p>寓意 · 温柔、优雅、婉约，适合女性名字。</p >
+    </div>
+    <div class="char-item">
+      <h3>宁</h3>
+      <p>寓意 · 安宁、平静、从容，带有平和气质。</p >
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>它是如何工作的？</h2>
+  <p>从英文名到中文名，只需要三步。</p >
+  <div class="steps">
+    <div class="step">
+      <div class="num">步骤 1</div>
+      <h3>输入英文名</h3>
+      <p>填写你的英文名、性别和喜欢的风格。</p >
+    </div>
+    <div class="step">
+      <div class="num">步骤 2</div>
+      <h3>生成中文名</h3>
+      <p>系统会结合发音、寓意和姓名习惯生成名字。</p >
+    </div>
+    <div class="step">
+      <div class="num">步骤 3</div>
+      <h3>查看解析</h3>
+      <p>每个字都会解释含义、发音和适合人群。</p >
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>中文名自然度评分</h2>
+  <p>我们会从姓氏、发音、寓意三个维度判断一个中文名是否自然。</p >
+  <div class="steps">
+    <div class="step">
+      <h3>姓 · 自然</h3>
+      <p>使用真实常见中文姓氏，避免生硬拼接。</p >
+    </div>
+    <div class="step">
+      <h3>音 · 贴近</h3>
+      <p>尽量保留英文名的发音线索，读起来顺口。</p >
+    </div>
+    <div class="step">
+      <h3>意 · 美好</h3>
+      <p>每个字都有积极寓意，符合中文审美。</p >
+    </div>
+  </div>
+</section>
+
+<section class="footer-cta">
+  <a href="#" class="btn btn-primary">你的中文名字 · 立即创建</a >
+</section>
+
+<footer>
+  © 2026 Chinese Identity · 中文名生成
+</footer>
+
+</body>
+</html>
